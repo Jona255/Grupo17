@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="CommitDialog.authorValues">
+		<item value="Jonatan Garcia &lt;sacha.255555@gmail.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Jonatan Garcia &lt;sacha.255555@gmail.com&gt;"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+		<item value="bitbucket.org"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="true"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\Casa\git\repository\ProjectDemo\.git">
+			<item value="empty"/>
+		</list>
+		<list key="D:\Proyectos Spring\ProjectDemo\.git">
+			<item value="empty"/>
+		</list>
+	</section>
+	<section name="GitCommitSearchPage">
+		<item key="HISTORY_SIZE" value="1"/>
+		<section name="HISTORY0">
+			<section name="searchSection">
+				<item key="ignoreCase" value="true"/>
+				<item key="regexSearch" value="false"/>
+				<item key="textPattern" value=""/>
+				<item key="matchAuthor" value="true"/>
+				<item key="matchCommit" value="true"/>
+				<item key="matchCommitter" value="true"/>
+				<item key="matchMessage" value="true"/>
+				<item key="matchParents" value="true"/>
+				<item key="matchTree" value="true"/>
+				<item key="allBranches" value="false"/>
+				<item key="repository0" value="D:\Proyectos Spring\ProjectDemo\.git"/>
+				<item key="repository1" value="C:\Users\Casa\git\repository\.git"/>
+				<item key="repositoryCount" value="2"/>
+			</section>
+		</section>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.dialogs.RebaseTargetSelectionDialog.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="419"/>
+		<item key="DIALOG_Y_ORIGIN" value="18"/>
+		<item key="DIALOG_WIDTH" value="538"/>
+		<item key="DIALOG_HEIGHT" value="532"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>
