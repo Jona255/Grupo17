@@ -29,7 +29,6 @@ public class Principal {
 			{
 				System.out.println("Debe ingresar un número entre 1 y 10.");
 			}
-			
 		} while (band);
 	}
 }
