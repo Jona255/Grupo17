@@ -1,4 +1,4 @@
-package ar.edu.unju.fi.numeropar;
+package fi.unju.edu.ar.numeropar;
 
 import java.util.Scanner;
 

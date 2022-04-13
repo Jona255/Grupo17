@@ -1,4 +1,4 @@
-package ar.edu.unju.fi.bisiesto;
+package fi.unju.edu.ar.bisiesto;
 
 import java.util.Scanner;
 
