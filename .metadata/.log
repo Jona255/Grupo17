@@ -7358,3 +7358,72 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:32:54.393
 !MESSAGE executing callback sts4.classpath.QbsYxQBb SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2022-04-13 18:40:53.644
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:29.804
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QbsYxQBb
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:29.805
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.QbsYxQBb
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:29.806
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:29.806
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.QbsYxQBb => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:31.019
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:31.020
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@2aef0f6[org.springframework.tooling.boot.ls:1.32.0.202203131529(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:31.020
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:34.764
+!MESSAGE Boot LS startup time from start to initialized: 3743ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:34.969
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.zinnldydisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:34.970
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:34.970
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:34.971
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:34.972
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.zinnldyd => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:34.974
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:34.979
+!MESSAGE classpath=52 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:34.982
+!MESSAGE buffering callback sts4.classpath.zinnldyd TP2_Grupo17 false 52
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:34.982
+!MESSAGE executing callback sts4.classpath.zinnldyd 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:51:35.552
+!MESSAGE executing callback sts4.classpath.zinnldyd SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 19:05:28.353
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.zinnldyd
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 19:05:28.354
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.zinnldyd
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 19:05:28.355
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 19:05:28.355
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.zinnldyd => OK
