@@ -7346,3 +7346,15 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 17:56:33.716
 !MESSAGE executing callback sts4.classpath.QbsYxQBb SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:32:54.382
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:32:54.383
+!MESSAGE buffering callback sts4.classpath.QbsYxQBb test true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:32:54.385
+!MESSAGE executing callback sts4.classpath.QbsYxQBb 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-04-13 18:32:54.393
+!MESSAGE executing callback sts4.classpath.QbsYxQBb SUCCESS [done]
