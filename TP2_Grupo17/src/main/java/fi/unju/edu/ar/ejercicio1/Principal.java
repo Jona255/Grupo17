@@ -1,4 +1,4 @@
-package fi.unju.edu.ar.factorial;
+package fi.unju.edu.ar.ejercicio1;
 
 import java.util.Scanner;
 

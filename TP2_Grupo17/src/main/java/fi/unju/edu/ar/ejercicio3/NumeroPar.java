@@ -1,4 +1,4 @@
-package fi.unju.edu.ar.numeropar;
+package fi.unju.edu.ar.ejercicio3;
 
 import java.util.Scanner;
 
