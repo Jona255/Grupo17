@@ -53,7 +53,7 @@ public class Meses {
 														if (num == 12) {
 															System.out.println("El número "+num+" corresponde al mes Diciembre");
 														} else {
-															System.out.println("El número "+num+" no correspnde a ningun mes del año.");
+															System.out.println("El número "+num+" no correspnde a ningún mes del año.");
 															band = false;
 														}
 													}
