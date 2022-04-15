@@ -11,7 +11,7 @@ public class Principal {
 			for (int i = 2; (j > 0); i = i + 2) { // si acumulador positivo calculo los valores de la serie
 				j = j + (41 - i); // calculo un elemento de la serie
 				if (j != 0) { // no incluyo al cero en la serie
-					System.out.println(j); // muestro la serie por pantalla
+					System.out.print(" "+j+" "); // muestro la serie por pantalla
 				}
 			}
 		}
