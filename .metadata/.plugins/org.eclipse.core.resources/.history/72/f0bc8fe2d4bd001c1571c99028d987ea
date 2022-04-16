@@ -1,0 +1,26 @@
+package fi.unju.edu.ar.ejercicio13;
+
+import java.time.LocalDate;
+
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		LocalDate fecha;
+		System.out.println(fecha.getLong(null));
+		
+		Empleado empleado1 = new Empleado("Juanito", 100);
+		empleado1.setHorasTrabajadas(100);
+		System.out.println(empleado1.getSueldo());
+		
+		
+		Empleado empleado2 = new Empleado();
+		Empleado empleado3 = new Empleado("Federico", 123, 100);
+		Empleado empleado4 = new Empleado("Alejandro", null,50);
+		Empleado empleado5 = new Empleado("Martin", 165);
+		
+	}
+
+}

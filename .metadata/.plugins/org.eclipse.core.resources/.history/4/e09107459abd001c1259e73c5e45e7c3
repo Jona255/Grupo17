@@ -1,0 +1,22 @@
+package fi.unju.edu.ar.ejercicio13;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Empleado empleado1 = new Empleado(100);
+		empleado1.setHorasTrabajadas(100);
+		System.out.println(empleado1.getSueldo());
+		
+		int horas= 100;
+		boolean horasMayor = horas >= 160;
+		if(horasMayor) {
+			System.out.println(((160*600) + ( horas - 160) * 650));
+			
+		}else {
+			System.out.println(horas*600);
+		}
+	}
+
+}

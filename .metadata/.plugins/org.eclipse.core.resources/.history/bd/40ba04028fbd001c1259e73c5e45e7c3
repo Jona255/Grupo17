@@ -1,0 +1,65 @@
+package fi.unju.edu.ar.ejercicio13;
+
+import java.util.Date;
+
+public class Empleado {
+	String nombre;
+	Date fechaIngreso;
+	int legajo;
+	String email;
+	double sueldo;
+	int horasTrabajadas;
+	
+	
+	
+	
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public Date getFechaIngreso() {
+		return fechaIngreso;
+	}
+	public void setFechaIngreso(Date fechaIngreso) {
+		this.fechaIngreso = fechaIngreso;
+	}
+	public int getLegajo() {
+		return legajo;
+	}
+	public void setLegajo(int legajo) {
+		this.legajo = legajo;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public double getSueldo() {
+		return sueldo;
+	}
+	public double setSueldo(double sueldo, int horas) {
+		boolean horasMayor = sueldo >= 160;
+		switch (String.valueOf(horasMayor)) {
+		case "true":
+			sueldo = ((160*600) + ( horas - 160) * 650);
+		case "false":	
+			sueldo = horas*600;
+		default:
+			break;
+		}
+		return this.sueldo = sueldo;
+	}
+	public int getHorasTrabajadas() {
+		return horasTrabajadas;
+	}
+	public void setHorasTrabajadas(int horasTrabajadas) {
+		this.horasTrabajadas = horasTrabajadas;
+	}
+
+	
+	
+	
+}
