@@ -90,24 +90,22 @@ public class ProcesoFecha {
 		Period period = Period.between(fecha1, fecha2);
 		return period;
 	}
-	////////CORREGIR no me toma DateTimeFormatter(formato)
-	/*public String formatearFecha() {
-		String formato = "dd/MM/yyyy";
-		DateTimeFormatter sdf = new DateTimeFormatter(formato);;
+	public String formatearFecha(LocalDate fecha) {
 		
-		String fechaFormato = sdf.format(fecha1);
+		DateTimeFormatter formateador = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		String fechaFormato = formateador.format(fecha);
 		return fechaFormato;
-	}*/
-	///CORREGIR como no se soluciono el anterior no puedo mostrar en el formato solicitado
-	//"dd/MM/yyyy" fecha1 y fecha2
+	}
+	
 	public String compararFecha(LocalDate fecha1, LocalDate fecha2) {
 		String mensaje;
 		if (fecha1.isAfter(fecha2) == true) {
-			mensaje = "La fecha "+fecha1+ " es posterior a la fecha" +fecha2;
-			
+			mensaje = "La fecha "+this.formatearFecha(fecha1)+
+			" es posterior a la fecha " +this.formatearFecha(fecha2);	
 		}else {
 			if (fecha1.isBefore(fecha2) == true) {
-				mensaje = "La fecha "+fecha1+ " es anterior a la fecha " +fecha2;
+				mensaje = "La fecha "+this.formatearFecha(fecha1)+ 
+				" es anterior a la fecha " +this.formatearFecha(fecha2);
 			}else {
 				mensaje = " las fechas son iguales";
 			}	
