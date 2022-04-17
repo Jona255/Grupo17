@@ -1,4 +1,4 @@
-package fi.unju.edu.ar.ejercicio17;
+package ar.edu.unju.fi.ejercicio17;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -61,61 +61,73 @@ public class Principal {
 		pf4.contarTiempoTranscurrido().getDays()+ " días desde la fecha "+
 		pf4.formatearFecha(fecha3) +" hasta la fecha "+pf4.formatearFecha(fecha4));
 		
-		//Desarrollo b.6		
+		//Desarrollo b.6 y b.7		
 		
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.println("Ingresar fecha 1 con formato dd/MM/yyyy: ");
+		DateTimeFormatter formateador = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 		
-		String fechaStr1 = scanner.next();
+		boolean band = true;
 		
-		DateTimeFormatter formateador1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		do {
+			
+			System.out.println("Ingresar fecha 1 con formato dd/MM/yyyy: ");
+			
+			String fechaStr1 = scanner.next();
 		
-		try {
-			LocalDate fecha5 = LocalDate.parse(fechaStr1, formateador1);
-			
-			//System.out.println(fecha5);
-			//(System.out.println(formateador.format(fecha5));
-			
-			ProcesoFecha pf5 = new ProcesoFecha();
-			pf5.setFecha1(fecha5);
-			
-			LocalDate fechaAumento = pf5.getFecha1().plusDays(365);
-			
-			System.out.println("La fecha "+fecha5+" mas 365 días es "+fechaAumento);
-			
-		} catch (DateTimeParseException e) { 
-				System.out.println("sdasd" +e.getMessage()); 		
-			}catch (Exception e) { 
-				System.out.println(e.getMessage()); 
+			try {
+				LocalDate fecha5 = LocalDate.parse(fechaStr1, formateador);
+				
+				//System.out.println(fecha5);
+				//(System.out.println(formateador.format(fecha5));
+				
+				ProcesoFecha pf5 = new ProcesoFecha();
+				pf5.setFecha1(fecha5);
+				
+				LocalDate fechaAumento = pf5.getFecha1().plusDays(365);
+				
+				System.out.println("La fecha "+fecha5+" mas 365 días es "+fechaAumento);
+				
+				band = false;
+				
+			} catch (DateTimeParseException e) { 
+					System.out.println("Formato de fecha incorrecto." +e.getMessage()); 
+				}catch (Exception e) { 
+					System.out.println(e.getMessage());
 			}
+		} while (band);
+		
+		do {
 
-		System.out.println("Ingresar fecha 2 con formato dd/MM/yy:");
-		
-		String fechaStr2 = scanner.next();
-		
-		try {
+			System.out.println("Ingresar fecha 2 con formato dd/MM/yy:");
 			
-			LocalDate fecha6 = LocalDate.parse(fechaStr2, formateador1);
+			String fechaStr2 = scanner.next();
 			
-			//System.out.println(fecha6);
-			//(System.out.println(formateador.format(fecha6));
-			
-			ProcesoFecha pf5 = new ProcesoFecha();
-			pf5.setFecha2(fecha6);
-			
-			LocalDate fechaDecremento = pf5.getFecha2().minusMonths(6);
-			
-			System.out.println("La fecha "+fecha6+" menos 6 meses es "+fechaDecremento);
-			
-		} catch (DateTimeParseException e) { 
-				System.out.println("sdasd" +e.getMessage()); 		
-			}catch (Exception e) { 
-				System.out.println(e.getMessage()); 
-			} finally {
-				scanner.close();
-			}
-		
+			try {
+				
+				LocalDate fecha6 = LocalDate.parse(fechaStr2, formateador);
+				
+				//System.out.println(fecha6);
+				//(System.out.println(formateador.format(fecha6));
+				
+				ProcesoFecha pf5 = new ProcesoFecha();
+				pf5.setFecha2(fecha6);
+				
+				LocalDate fechaDecremento = pf5.getFecha2().minusMonths(6);
+				
+				System.out.println("La fecha "+fecha6+" menos 6 meses es "+fechaDecremento);
+				
+				band = false;
+				
+			} catch (DateTimeParseException e) { 
+					System.out.println("Formato de fecha incorrecto." +e.getMessage());
+					band = true;
+				}catch (Exception e) { 
+					System.out.println(e.getMessage());
+					band = true;
+				}
+		} while (band);
+		scanner.close();
 	}
 
 }

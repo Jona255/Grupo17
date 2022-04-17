@@ -1,4 +1,4 @@
-package fi.unju.edu.ar.ejercicio5;
+package ar.edu.unju.fi.ejercicio5;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

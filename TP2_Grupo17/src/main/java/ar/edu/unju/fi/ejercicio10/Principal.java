@@ -1,4 +1,4 @@
-package fi.unju.edu.ar.ejercicio10;
+package ar.edu.unju.fi.ejercicio10;
 
 public class Principal {
 
