@@ -1,5 +1,6 @@
 package fi.unju.edu.ar.ejercicio6;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Principal {
@@ -12,26 +13,31 @@ public class Principal {
 		while (notaInvalida == false) { // se pide el ingreso de datos mientras la variable sea falsa
 			// se pide que se ingrese datos
 			System.out.println("****************************************************");
-			System.out.println("ingrese un valor de nota en formato numero");
-			// se guarda el valor ingresado
-			int nota = entrada.nextInt();
-			// si se cumplen ciertas condiciones se muestran diferentes mensajes por
-			// pantalla
-			if ((nota <= 10) && (nota >= 7)) {
-				System.out.println("El alumno promociona");
-			} else {
-				if ((nota < 6) && (nota >= 1)) {
-					System.out.println("El alumno desaprueba");
+			try {
+				System.out.println("ingrese un valor de nota en formato numero");
+				// se guarda el valor ingresado
+				int nota = entrada.nextInt();
+				// si se cumplen ciertas condiciones se muestran diferentes mensajes por
+				// pantalla
+				if ((nota <= 10) && (nota >= 7)) {
+					System.out.println("El alumno promociona");
 				} else {
-					if (nota == 6) {//
-						System.out.println("Alumno regulariza");
+					if ((nota < 6) && (nota >= 1)) {
+						System.out.println("El alumno desaprueba");
 					} else {
-						System.out.println("valor de nota no permitido");
-						// si no cumple las anteriores condiciones
-						notaInvalida = true; // cambio el valor de la variable para que ya no se ingresen datos
-						entrada.close(); // cierro el lector de valores de entrada
+						if (nota == 6) {//
+							System.out.println("Alumno regulariza");
+						} else {
+							System.out.println("valor de nota no permitido");
+							// si no cumple las anteriores condiciones
+							notaInvalida = true; // cambio el valor de la variable para que ya no se ingresen datos
+							entrada.close(); // cierro el lector de valores de entrada
+						}
 					}
 				}
+			} catch (InputMismatchException ex) {
+				System.out.println("Debe ingresar obligatoriamente un número entero.");
+				notaInvalida = true;
 			}
 		}
 	}
