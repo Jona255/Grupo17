@@ -29,17 +29,19 @@ public class Principal {
 							System.out.println("Alumno regulariza");
 						} else {
 							System.out.println("valor de nota no permitido");
+							System.out.println("Fin");
 							// si no cumple las anteriores condiciones
-							notaInvalida = true; // cambio el valor de la variable para que ya no se ingresen datos
-							entrada.close(); // cierro el lector de valores de entrada
+							notaInvalida = true; // cambio el valor de la variable para que ya no se ingresen datos							
 						}
 					}
 				}
 			} catch (InputMismatchException ex) {
-				System.out.println("Debe ingresar obligatoriamente un número entero.");
+				System.out.println("debe ingresar un numero");
+				System.out.println("Fin");
 				notaInvalida = true;
 			}
 		}
+		entrada.close(); // cierro el lector de valores de entrada
 	}
 
 }

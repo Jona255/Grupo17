@@ -77,10 +77,7 @@ public class Principal {
 		
 			try {
 				LocalDate fecha5 = LocalDate.parse(fechaStr1, formateador);
-				
-				//System.out.println(fecha5);
-				//(System.out.println(formateador.format(fecha5));
-				
+			
 				ProcesoFecha pf5 = new ProcesoFecha();
 				pf5.setFecha1(fecha5);
 				
@@ -106,10 +103,7 @@ public class Principal {
 			try {
 				
 				LocalDate fecha6 = LocalDate.parse(fechaStr2, formateador);
-				
-				//System.out.println(fecha6);
-				//(System.out.println(formateador.format(fecha6));
-				
+			
 				ProcesoFecha pf5 = new ProcesoFecha();
 				pf5.setFecha2(fecha6);
 				

@@ -10,7 +10,8 @@ public class Principal {
 
 		Empleado empleado1 = new Empleado("Juanito", 100);
 		empleado1.setHorasTrabajadas(100);
-		System.out.println(empleado1.getSueldo());
+		System.out.println("al empleado "+empleado1.nombre+
+				" le corresponde un sueldo de $"+empleado1.getSueldo());
 		
 		
 		Empleado empleado2 = new Empleado();
